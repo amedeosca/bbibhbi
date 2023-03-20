@@ -61,3 +61,10 @@
             similarity = Math.round(similarity * 100);
 
             document.getElementById("result").innerHTML = `La rete neurale ha calcolato che il nuovo materiale composito ha le seguenti caratteristiche meccaniche: <br>Yield Strength: ${avgProperties.yieldStrength.toFixed(2)} MPa<br>Elastic Modulus: ${avgProperties.elasticModulus.toFixed(2)} GPa<br>Tensile Strength: ${avgProperties.tensileStrength.toFixed(2)}
+similarity = Math.round(similarity * 100);
+
+            document.getElementById("result").innerHTML = `La rete neurale ha calcolato che il nuovo materiale composito ha le seguenti caratteristiche meccaniche: <br>Yield Strength: ${avgProperties.yieldStrength.toFixed(2)} MPa<br>Elastic Modulus: ${avgProperties.elasticModulus.toFixed(2)} GPa<br>Tensile Strength: ${avgProperties.tensileStrength.toFixed(2)} MPa<br><br>La nuova lega è simile al acciaio al ${similarity}%.`;
+        }
+    </script>
+</body>
+</html>
